@@ -1,5 +1,6 @@
 package com.team3.app.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Images")
-public class Image {
+public class Image implements Serializable{
 	@Id
 	@Column(name = "id_image")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

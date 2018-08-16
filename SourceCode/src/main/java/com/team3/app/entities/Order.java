@@ -1,5 +1,6 @@
 package com.team3.app.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Orders")
-public class Order {
+public class Order implements Serializable{
 	@Id
 	@Column(name = "id_order")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
