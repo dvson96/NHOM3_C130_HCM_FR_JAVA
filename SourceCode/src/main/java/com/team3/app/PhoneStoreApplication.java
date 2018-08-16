@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JpaLearningApplication {
+public class PhoneStoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JpaLearningApplication.class, args);
+		SpringApplication.run(PhoneStoreApplication.class, args);
 	}
 }
